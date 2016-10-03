@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <style type="text/css">
+    input{
+      margin: 5px
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Choose the president</a>
+    </div>
+
+
+  </div>
+</nav>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <form>
+    <h1>Les fondateurs</h1>
+    <h3>Veuillez remplire les champs des fondateurs</h3>
+    <div id="fondateurs">
+      <fieldset id="id-fondateur[0]">
+
+      <label>Prenom et Nom :</label>  
+      <input type="text" name="prenom-fondateur[0]" placeholder="Prenom" />
+        <input type="text" name="nom-fondateur[0]" placeholder="Nom" />
+      </fieldset>
+      <fieldset id="id-fondateur[1]">
+      <label>Prenom et Nom :</label> 
+        <input type="text" name="prenom-fondateur[1]" placeholder="Prenom"/>
+        <input type="text" name="nom-fondateur[1]" placeholder="Nom"/>
+      </fieldset>
+      <fieldset id="id-fondateur[2]">
+      <label>Prenom et Nom :</label> 
+        <input type="text" name="prenom-fondateur[2]" placeholder="Prenom"/>
+        <input type="text" name="nom-fondateur[2]" placeholder="Nom"/>
+      </fieldset>
+      <fieldset id="id-fondateur[3]">
+      <label>Prenom et Nom :</label> 
+        <input type="text" name="prenom-fondateur[3]" placeholder="Prenom"/>
+        <input type="text" name="nom-fondateur[3]" placeholder="Nom"/>
+      </fieldset>
+
+    </div>
+    
+    
+
+
+    <h1>Le président</h1> 
+    <h5>(Le fondateur n'est selectinnable que si ses champs sont remplis)</h5> 
+    <fieldset id="id-president" data-from="id-fondateur">
+      <select id="select-fondateur" >
+       <!--  ce chix ne sera pas selectionnable -->
+        <option disabled selected value> Sélectionnez un fondateur qui sera le president</option>
+
+        <option id="select-fondateur-0" value="0" style="display:none">Prenom et nom du fondateur 0</option>
+        <option id="select-fondateur-1" value="1" style="display:none">Prenom et nom du fondateur 1</option>
+        <option id="select-fondateur-2" value="2" style="display:none">Prenom et nom du fondateur 2</option>
+        <option id="select-fondateur-3" value="3" style="display:none">Prenom et nom du fondateur 3</option>
+      </select><br><br>
+      <input type="text" name="prenom-president"/>
+      <input type="text" name="nom-president"/>
+    </fieldset>
+
+  </form>
+
+  </div>
+</div>
+   
+</div>
+ 
+  <!-- jquery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="/js/Q3.js"></script>
+</body>
+</html>
